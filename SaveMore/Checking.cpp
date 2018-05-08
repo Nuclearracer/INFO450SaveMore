@@ -4,9 +4,9 @@
 
 Checking::Checking()
 {
-	cout << "Enter opening balance." << endl;
+	cout << "Enter opening balance for Checking." << endl;
 	cin >> balance;
-	cout << "\nEnter Account Number." << endl;
+	cout << "\nEnter Account Number for Checking." << endl;
 	cin >> accountNum;
 }
 
@@ -28,6 +28,6 @@ void Checking::orderChecks()
 
 void Checking::display()
 {
-	cout << "Your Checking Account:" << endl;
-		cout << "Account Number: " << accountNum << "\nBalance: " << balance << endl;
+	cout << "**Your Checking Account**" << endl;
+		cout << "Account Number: " << accountNum << "\nBalance: $" << balance << endl;
 }

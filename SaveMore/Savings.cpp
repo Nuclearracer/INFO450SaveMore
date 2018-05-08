@@ -4,7 +4,10 @@
 
 Savings::Savings()
 {
-	balance = 0;
+	cout << "Enter opening balance for Savings." << endl;
+	cin >> balance;
+	cout << "\nEnter Account Number for Savings." << endl;
+	cin >> accountNum;
 }
 Savings::Savings(double bal, int accountN)
 {
@@ -13,6 +16,7 @@ Savings::Savings(double bal, int accountN)
 }
 int Savings::withdraw()
 {
+	cout << endl;
 	double wd;
 	cout << "Please enter withdrawal ammount for account #" << accountNum << endl;
 	cin >> wd;
@@ -38,10 +42,11 @@ double Savings::assessInterest()
 	{
 		interestRt = .01;
 	}
+	cout << endl;
 	return balance += interestRt * balance;
 }
 void Savings::display()
 {
-	cout << "Your Savings Account:" << endl;
-	cout << "Balance: " << balance << "\nAccount#: " << accountNum << "\nInterest Rate: " << interestRt << "\n\n";
+	cout << "\n**Your Savings Account**" << endl;
+	cout << "Balance: $" << balance << "\nAccount#: " << accountNum << "\nInterest Rate: " << interestRt << "\n\n";
 }
