@@ -5,7 +5,7 @@ int BankAccount::withdraw()
 {
 	double wd;
 	//need to check for negative balance and not let witdraw exceed balance.
-	cout << "Please enter withdrawal ammount." << endl;
+	cout << "Please enter withdrawal ammount for account #" << accountNum << endl;
 	cin >> wd;
 	if (balance - wd < 0)
 	{
@@ -19,7 +19,7 @@ int BankAccount::withdraw()
 
 double BankAccount::deposit()
 {
-	cout << "Please enter deposit ammount." << endl;
+	cout << "Please enter deposit ammount for account #" << accountNum << endl;
 	double dp;
 	cin >> dp;
 	return balance += dp;

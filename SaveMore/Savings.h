@@ -7,6 +7,7 @@ class Savings : public BankAccount
 public:
 	Savings();
 	Savings(double bal, int accountN);
+	int withdraw();
 	double assessInterest();
 	void display();
 };
