@@ -32,7 +32,7 @@ int Savings::withdraw()
 	}
 	return 0;
 }
-double Savings::assessInterest()
+void Savings::assessInterest()
 {
 	if (balance >= 10000)
 	{
@@ -43,7 +43,7 @@ double Savings::assessInterest()
 		interestRt = .01;
 	}
 	cout << endl;
-	return balance += interestRt * balance;
+	balance += interestRt * balance;
 }
 void Savings::display()
 {

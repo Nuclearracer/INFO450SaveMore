@@ -22,6 +22,7 @@ void Certificate::assessInterest()
 	{
 		interestRt = .1;
 	}
+	balance += interestRt * balance;
 	cout << "Your interest rate for account #" << accountNum << " is " << interestRt;
 }
 
