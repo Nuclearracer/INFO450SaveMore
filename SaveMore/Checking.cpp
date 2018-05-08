@@ -12,7 +12,7 @@ Checking::Checking()
 
 void Checking::orderChecks()
 {
-	cout << "How many checks would you like to order? " << endl;
+	cout << "How many checks would you like to order? $15 to order checks." << endl;
 	cin >> numOfChecks;
 	if (numOfChecks > 0)
 	{
